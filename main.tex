@@ -1,0 +1,111 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+
+\title{FY2019 Contribution Report}
+\author{Asher Mancinelli \\ HPC/ML}
+
+\begin{document}
+
+\maketitle
+
+\section{ExaSGD \\ 
+  {\small Subproject of Exascale Computing Project}}
+
+\subsection{Hiop}
+
+Coordinating with team members at LLNL, I helped develop an in-house unit testing framework in preparation for porting \href{https://github.com/LLNL/hiop}{HiOp}'s core linear algebra kernels to run on GPU devices.
+I also coordinated with the rest of the team to \textbf{develop our strategy} for porting kernels to GPU, and then \textbf{led a development team} to port HiOp's entire linear algebra library to run on GPU devices.
+I also wrote the scripts to automate our testbed, running CI on machines at PNNL and ORNL to verify the kernels we ported to GPU.
+The PI, Slaven Peles, said that without me "this project simply would not have been completed."
+I am an author on a paper our team is currently producing, which will (hopefully) be published in a special edition of the Paralell Computing journal, outlining our methods on this project.
+
+\subsection{ExaGO}
+
+I was also tasked with setting up a testbed and CI pipeline for tests in ExaGO, a driver for using various nonlinear solvers (such as HiOp), which I completed.
+We also ported several key kernels in this project to run on GPUs, again supported by our automated testing system.
+I was nominated to give a talk on this project at NREL's SIAM CSE21 Minisymposium next calendar year, \textbf{contributing to the national field of grid optimization}.
+
+\bigskip
+
+\underline{I received an Outstanding Performance Award} for my work in the ECP, the \underline{highest internal PNNL award given}.
+I was also asked to take the position of Software Development Thrust Lead for FY21 by the PI's of this project (Slaven Peles, Chris Oehmen, Lori Ross), in which I would \underline{lead developers from 5 national laboratories} in our software development efforts, as well as continue \textbf{contributing to our overall software strategy}.
+
+\bigskip
+
+In addition to my contributions to the above projects, I also \textbf{led and helped organize three hackathons}, in which up to \underline{55+ members of 5+ national laboratories} called in as we discussed strategies for porting particularly challenging kernels to GPUs.
+As we discussed strategies, I would implement and test changes to our \verb|>100,000| line codebase in real time.
+Although the technical knowledge of those on the call often far exceeded my own, I was able to contribute to the discussion, explain key components of the libraries, and live-code algorithms as members of the call made suggestions.
+
+\section{PNNL HPC/ML Team}
+
+I contributed and advised many projects through the HPC/ML team, though I will only mention select projects below:
+
+\subsection{GatherV Development}
+
+Under the guidance of Doug Baxter, I developed a novel implementation for the \verb|MPI_Gatherv| routine.
+This implementation \textit{significantly} improves performance under certain workloads - better than OpenMPI, Intel, and MPICH's respective implementations.
+We hope to publish our results after further testing.
+
+\subsection{MLFlow Strategy Development}
+
+Late this FY, Phil George reached out to me for guidance on PNNL's strategy for MLFlow, a tool for machine learning developers.
+I designed a strategy to take this project in another direction which would:
+
+\begin{itemize}
+  \item \underline{Unencumber researchers} without HPC experience in their ML workflows,
+  \item Lower barrier to entry to our compute capabilities for non-HPC-specialists,
+  \item and increase awareness of Research Computing's compute capabilites.
+\end{itemize}
+
+This strategy better develops PNNL's ML capabilities, a high-priority area in which we would like to expand significantly.
+I am overseeing two other developers on our team as they implement this strategy.
+
+\subsection{Presentations}
+
+I was asked to give several brown-bag talks on optimization, Python development, and inter-language development at PNNL's \textit{Python Users's Group}.
+This \underline{contributed to PNNL's culture of computing}, as I helped several other projects understand how they might achieve massive performance boosts without significantly increasing development time.
+I demonstrated how I can easily match the performance of the most popular and high-performing Python libraries currently available, and several other projects adopted these strategies as a result.
+One such project was APBS, managed by Nathan Baker, who reached out for my expertise on the project after attending one of my brown-bags.
+
+\bigskip
+
+In addition to technical and leadership work, I made myself available to interns in the HPC/ML team to:
+
+\begin{itemize}
+  \item give technical guidance,
+  \item help them network within the lab,
+  \item bring them on to projects which allign with their interests and skills.
+\end{itemize}
+
+\section{APBS}
+
+I made significant contributions to APBS, a protien-folding program with $>$30,000 users globally.
+I rewrote and refactored significant portions of the code to unecumber domain scientists which would be otherwise unable to contribute.
+
+\section{Boltzmann}
+
+In this project, I worked directly with researchers from PNNL and UC Santa Barbara in simulating biological systems.
+Having no prior knowledge of their domain, I rewrote core pieces of their program to achieve massive performance gains.
+\textbf{I reduced the runtime of their simulation from \textit{two weeks} to \textit{eight minutes (a $>$2500x boost in performance)}}.
+Our team's work was presented to a panel of external evaluators from academic institutions and was deemed \textit{"the posterchild for how PNNL should operate"}.
+Because of my work and the success of the project, Tony Peurrung (Deputy Dir for S\&T) reached out to our team to learn more about our process to figure out why we were so successful.
+Jim Ang and other leaders and chief scientists at PNNL were also informed of our success.
+I received another Outstanding Performance Award for my contributions to this project.
+
+\section{Conclusion}
+
+\textbf{In my first six months on staff} at PNNL, my most significant contributions and accolades have been:
+
+\begin{itemize}
+  \item \underline{Two} Outstanding Performance Awards
+  \item Lead and organized collaboration between 5+ natl. labs
+  \item Developed long term lab-wide and nation-wide strategies
+  \item Made technical contributions to projects that have had a lab-wide, nation-wide, and global impact
+  \item Lead and developed several technical teams.
+\end{itemize}
+
+\bigskip
+
+\end{document}
